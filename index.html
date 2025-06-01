@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Big 2 AI Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Big 2 (Capsa Banting) vs AI</h1>
+
+  <div id="game-container">
+    <div id="players">
+      <div id="player-1">You</div>
+      <div id="player-2">AI 1</div>
+      <div id="player-3">AI 2</div>
+      <div id="player-4">AI 3</div>
+    </div>
+
+    <div id="current-combo">
+      <h2>Current Combo</h2>
+      <div id="combo-cards"></div>
+      <p id="current-player"></p>
+    </div>
+
+    <div id="player-hand">
+      <h2>Your Hand</h2>
+      <div id="hand-cards"></div>
+      <button id="play-button">Play</button>
+      <button id="pass-button">Pass</button>
+    </div>
+  </div>
+
+  <script src="utils/cardUtils.js"></script>
+  <script src="utils/comboUtils.js"></script>
+  <script src="ai/aiPlayer.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
